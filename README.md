@@ -1,7 +1,6 @@
 # Gesture Controlled Virtual Camera
 
-A real-time **gesture-controlled virtual camera system** built using  
-**Python, OpenCV, MediaPipe, and OBS Virtual Camera**.
+A real-time **gesture-controlled virtual camera system** built using **Python, OpenCV, MediaPipe, and OBS Virtual Camera**.
 
 This project allows users to control **video on/off, zoom in–out, and background blur**
 using **hand gestures**, without installing any plugin or extension inside
