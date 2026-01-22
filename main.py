@@ -7,7 +7,6 @@ import platform
 
 
 def main():
-    # Start video capture and set defaults
     device_val = None
     cap = cv2.VideoCapture(0)
     pref_width = 1280
@@ -33,9 +32,8 @@ def main():
             if not success:
                 continue
 
-            img = cv2.flip(img, 1)   # ✅ ADD THIS
-
-            img = handsutils.mediapipe_gestures(img, img) #cropped_img = img[0:720, 0:400]   then img = handsutils.mediapipe_gestures(img, cropped_img)
+            img = cv2.flip(img, 1)  
+            img = handsutils.mediapipe_gestures(img, img)
             img = cv2.resize(img, (1280, 720))
             cam.send(img)
             cam.sleep_until_next_frame()
